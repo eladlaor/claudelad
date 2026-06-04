@@ -11,7 +11,7 @@ This plugin automates the entire flow. One command fills a single day, a whole w
 ## Install
 
 ```
-/plugin install timewatch-fill@claudecodelad
+/plugin install timewatch-fill@claudelad
 ```
 
 ## Setup
@@ -54,7 +54,7 @@ All arguments are positional and optional. Missing arguments fall back to your c
 ## Uninstall
 
 ```
-/plugin uninstall timewatch-fill@claudecodelad
+/plugin uninstall timewatch-fill@claudelad
 ```
 
 ## How It Works

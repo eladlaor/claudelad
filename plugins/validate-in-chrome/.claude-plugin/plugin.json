@@ -1,0 +1,5 @@
+{
+  "name": "validate-in-chrome",
+  "description": "Validate a freshly-implemented feature against behavioral acceptance criteria by driving the user's real Chrome session (via claude-in-chrome MCP) inside an isolated subagent. The main agent synthesizes a behavioral spec from recent session context; the subagent verifies it sequentially and returns a text-only pass/fail summary.",
+  "version": "0.1.0"
+}

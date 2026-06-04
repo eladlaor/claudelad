@@ -18,7 +18,7 @@ This plugin fills that gap with a `SessionStart` hook that injects the full temp
 ## Install
 
 ```
-/plugin install date-context@claudecodelad
+/plugin install date-context@claudelad
 ```
 
 ## Setup
@@ -28,7 +28,7 @@ No setup required. Works immediately after install.
 ## Uninstall
 
 ```
-/plugin uninstall date-context@claudecodelad
+/plugin uninstall date-context@claudelad
 ```
 
 ## How It Works

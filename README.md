@@ -11,6 +11,7 @@
   - [timewatch-fill](#timewatch-fill)
   - [validate-in-chrome](#validate-in-chrome)
   - [what-i-learned-today](#what-i-learned-today)
+  - [worktree-manager](#worktree-manager)
 
 A Claude Code plugin marketplace. Hooks, skills, and automations that extend what Claude Code can do out of the box.
 
@@ -85,4 +86,10 @@ After Claude implements a UI change, you usually have to manually click around t
 A productive day with Claude Code teaches you real things — a CLI flag, a debugging conclusion, an architectural call — that then vanish into long transcripts. This plugin mines the day's session files, filters out tool noise and routine status updates, and distills only the durable insights into a 10-bullet "what I learned" digest tagged by project. It saves the digest to disk and runs an interactive open-recall quiz over those lessons, one question at a time. It excludes its own prior digests and quizzes from the corpus, so reviewing yesterday's lessons never recycles into today's.
 
 [Documentation](plugins/what-i-learned-today/README.md) · `/plugin install what-i-learned-today@claudelad`
+
+### worktree-manager
+
+Claude Code's built-in worktrees are session-scoped and disappear when the session ends. If your workflow runs parallel branches — you on one feature, Claude on another, across multiple sessions — you need worktrees that persist, live as navigable sibling directories, and merge back cleanly. This plugin creates and manages persistent worktrees, auto-detects worktree context via a `SessionStart` hook (injecting branch, main-repo path, and sibling worktrees), and merges branches back with dependency-ordered, conflict-aware resolution and verification.
+
+[Documentation](plugins/worktree-manager/README.md) · `/plugin install worktree-manager@claudelad`
 

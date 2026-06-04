@@ -54,7 +54,7 @@ for the installed plugin directory:
 PLUGIN_SCRIPT="$(find ~/.claude/plugins -path '*/md-to-gdoc/scripts/create_gdoc.py' -type f 2>/dev/null | head -1)"
 ```
 
-If `$PLUGIN_SCRIPT` is empty, stop and tell the user: "md-to-gdoc plugin not found. Install with: `/plugin install md-to-gdoc@claudecodelad`"
+If `$PLUGIN_SCRIPT` is empty, stop and tell the user: "md-to-gdoc plugin not found. Install with: `/plugin install md-to-gdoc@claudelad`"
 
 ```bash
 SCRIPTS_DIR="$(dirname "$PLUGIN_SCRIPT")"

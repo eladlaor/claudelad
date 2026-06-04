@@ -15,7 +15,7 @@ This plugin converts markdown to a fully formatted Google Doc via the Docs API, 
 ## Install
 
 ```
-/plugin install md-to-gdoc@claudecodelad
+/plugin install md-to-gdoc@claudelad
 ```
 
 ## Setup
@@ -55,7 +55,7 @@ Extracts the formatting from the reference doc, saves the profile for reuse, the
 ## Uninstall
 
 ```
-/plugin uninstall md-to-gdoc@claudecodelad
+/plugin uninstall md-to-gdoc@claudelad
 ```
 
 ## How It Works

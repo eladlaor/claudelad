@@ -11,7 +11,7 @@ This plugin uploads an entire directory (or multiple directories) in a single co
 ## Install
 
 ```
-/plugin install notebooklm-upload@claudecodelad
+/plugin install notebooklm-upload@claudelad
 ```
 
 ## Setup
@@ -47,7 +47,7 @@ PDF, TXT, MD, DOCX, PPTX, MP3, WAV, PNG, JPG, JPEG
 ## Uninstall
 
 ```
-/plugin uninstall notebooklm-upload@claudecodelad
+/plugin uninstall notebooklm-upload@claudelad
 ```
 
 ## How It Works

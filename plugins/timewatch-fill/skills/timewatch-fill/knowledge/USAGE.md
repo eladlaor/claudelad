@@ -21,7 +21,7 @@ Claude Code plugin that fills TimeWatch attendance via browser automation (claud
 ### 1. Install the plugin
 
 ```
-/plugin install timewatch-fill@claudecodelad
+/plugin install timewatch-fill@claudelad
 ```
 
 ### 2. Create your credentials file

@@ -91,6 +91,18 @@
       "license": "MIT",
       "category": "productivity",
       "tags": ["learning", "digest", "sessions", "recall", "quiz", "spaced-repetition", "knowledge"]
+    },
+    {
+      "name": "worktree-manager",
+      "source": "./plugins/worktree-manager",
+      "description": "Manage persistent git worktrees for parallel human+AI development across sessions. Create, list, and remove sibling-directory worktrees, auto-detect worktree context on session start, and merge worktree branches back with dependency-ordered, conflict-aware resolution.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["git", "worktree", "parallel", "branches", "merge", "hooks", "session"]
     }
   ]
 }

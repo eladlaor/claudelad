@@ -11,7 +11,7 @@ Every time you exit a session, a `SessionEnd` hook automatically extracts the fi
 ## Install
 
 ```
-/plugin install session-finder@claudecodelad
+/plugin install session-finder@claudelad
 ```
 
 ## Setup
@@ -30,7 +30,7 @@ No setup required. The index builds automatically as you end sessions.
 |---------|-------------|
 | `/session-finder:find-session database schema setup` | Find sessions about database work |
 | `/session-finder:find-session that session where I configured auth` | Search by topic description |
-| `/session-finder:find-session langrag project refactoring` | Search by project name and activity |
+| `/session-finder:find-session myapp project refactoring` | Search by project name and activity |
 
 Results include session ID, project, branch, date, summary, and a ready-to-use `claude --resume <id>` command. By default shows top 5 results; include a count in your query (e.g., "top 10 sessions about auth") to see more.
 
@@ -47,7 +47,7 @@ Set in your shell profile (e.g., `export SESSION_FINDER_MODEL=claude-sonnet-4-20
 ## Uninstall
 
 ```
-/plugin uninstall session-finder@claudecodelad
+/plugin uninstall session-finder@claudelad
 ```
 
 ## How It Works
