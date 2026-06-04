@@ -8,10 +8,13 @@
   - [session-finder](#session-finder)
   - [md-to-gdoc](#md-to-gdoc)
   - [notebooklm-upload](#notebooklm-upload)
+  - [timewatch-fill](#timewatch-fill)
+  - [validate-in-chrome](#validate-in-chrome)
+  - [what-i-learned-today](#what-i-learned-today)
 
 A Claude Code plugin marketplace. Hooks, skills, and automations that extend what Claude Code can do out of the box.
 
-Four plugins covering productivity, document creation, and workflow automation. All MIT-licensed, minimal dependencies, and designed to work right after install.
+Plugins covering productivity, document creation, browser automation, and workflow automation. All MIT-licensed, minimal dependencies, and designed to work right after install.
 
 ## Install
 
@@ -64,4 +67,22 @@ You have notes, PDFs, recordings, and docs scattered across directories. Getting
 **Example:** `upload ~/research --notebook "Q1 Review" --include pdf,md,mp3`
 
 [Documentation](plugins/notebooklm-upload/README.md) · `/plugin install notebooklm-upload@claudelad`
+
+### timewatch-fill
+
+Filling TimeWatch attendance is repetitive monthly busywork. This plugin drives your real Chrome session (via the claude-in-chrome MCP) to fill a single day, a week, or every unfilled workday in the current month — with configurable times, task, and location.
+
+[Documentation](plugins/timewatch-fill/README.md) · `/plugin install timewatch-fill@claudelad`
+
+### validate-in-chrome
+
+After Claude implements a UI change, you usually have to manually click around to verify it actually works. This plugin adds a `/validate-in-chrome` slash command that synthesizes a behavioral acceptance-criteria spec from what was just implemented, then hands it to an isolated subagent that drives your real Chrome session (not ephemeral Chromium) through each criterion and returns a terse pass/fail table. The subagent never sees the diff or the code — verification stays honest.
+
+[Documentation](plugins/validate-in-chrome/README.md) · `/plugin install validate-in-chrome@claudelad`
+
+### what-i-learned-today
+
+A productive day with Claude Code teaches you real things — a CLI flag, a debugging conclusion, an architectural call — that then vanish into long transcripts. This plugin mines the day's session files, filters out tool noise and routine status updates, and distills only the durable insights into a 10-bullet "what I learned" digest tagged by project. It saves the digest to disk and runs an interactive open-recall quiz over those lessons, one question at a time. It excludes its own prior digests and quizzes from the corpus, so reviewing yesterday's lessons never recycles into today's.
+
+[Documentation](plugins/what-i-learned-today/README.md) · `/plugin install what-i-learned-today@claudelad`
 

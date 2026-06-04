@@ -1,0 +1,1 @@
+/home/elad.l/.claude/skills/what-i-learned-today/SKILL.md

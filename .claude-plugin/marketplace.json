@@ -67,6 +67,30 @@
       "license": "MIT",
       "category": "productivity",
       "tags": ["timewatch", "attendance", "browser-automation", "claude-in-chrome"]
+    },
+    {
+      "name": "validate-in-chrome",
+      "source": "./plugins/validate-in-chrome",
+      "description": "Validate a freshly-implemented feature against behavioral acceptance criteria by driving the user's real Chrome session (claude-in-chrome MCP) inside an isolated subagent. The main agent synthesizes the spec from session context; the subagent verifies sequentially and returns a terse pass/fail summary.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["validation", "e2e", "ui-testing", "browser-automation", "claude-in-chrome", "subagent"]
+    },
+    {
+      "name": "what-i-learned-today",
+      "source": "./plugins/what-i-learned-today",
+      "description": "Summarize what you learned across your Claude Code sessions in a given day (or window) as a 10-bullet lessons-learned digest, save it to disk, and run an interactive open-recall quiz. Excludes its own prior output to avoid recycling.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["learning", "digest", "sessions", "recall", "quiz", "spaced-repetition", "knowledge"]
     }
   ]
 }

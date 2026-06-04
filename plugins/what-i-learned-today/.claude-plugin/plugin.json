@@ -1,0 +1,5 @@
+{
+  "name": "what-i-learned-today",
+  "description": "Summarize what you learned across your Claude Code sessions in a given day (or window) as a 10-bullet lessons-learned digest, save it to disk, and run an interactive open-recall quiz. Excludes its own prior output to avoid recycling.",
+  "version": "1.0.0"
+}
