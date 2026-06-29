@@ -11,7 +11,8 @@ DEFAULT_BEAM_SIZE: int = 5
 DEFAULT_VAD_FILTER: bool = True  # trim long silences -> faster, cleaner segments
 
 # --- Diarization (pyannote) ---
-DIARIZATION_MODEL: str = "pyannote/speaker-diarization-3.1"
+# pyannote v4's current pipeline. Has its own HF gate (separate from 3.x).
+DIARIZATION_MODEL: str = "pyannote/speaker-diarization-community-1"
 SEGMENTATION_MODEL: str = "pyannote/segmentation-3.0"
 HF_TOKEN_ENV_VARS: tuple[str, ...] = ("HF_TOKEN", "HUGGINGFACE_TOKEN", "HF_API_TOKEN")
 
