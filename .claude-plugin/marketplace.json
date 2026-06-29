@@ -9,6 +9,18 @@
   },
   "plugins": [
     {
+      "name": "audio-transcribe",
+      "source": "./plugins/audio-transcribe",
+      "description": "Transcribe recordings of conversations or talks into clearly documented, speaker-labeled transcripts, fully locally. faster-whisper for ASR (Hebrew + 90 languages) and pyannote for diarization. No audio leaves the machine.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["transcription", "asr", "diarization", "whisper", "pyannote", "hebrew", "audio", "local"]
+    },
+    {
       "name": "date-context",
       "source": "./plugins/date-context",
       "description": "Injects today's date, day of week, current time, and timezone into Claude's context on every session start.",

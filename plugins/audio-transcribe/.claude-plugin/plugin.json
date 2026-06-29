@@ -1,0 +1,5 @@
+{
+  "name": "audio-transcribe",
+  "description": "Transcribe audio to text with speaker diarization, fully local. Uses faster-whisper for ASR (Hebrew and 90+ languages) and pyannote for speaker labeling. No audio leaves the machine.",
+  "version": "1.0.0"
+}
