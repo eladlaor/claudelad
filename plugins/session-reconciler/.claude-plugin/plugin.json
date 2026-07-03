@@ -1,0 +1,5 @@
+{
+  "name": "session-reconciler",
+  "description": "Attributes an uncommitted working tree back to the parallel Claude Code sessions that produced it, using the JSONL transcripts. Mechanical-first (jq), collision detection, suggested commit grouping. Never runs git.",
+  "version": "0.1.0"
+}

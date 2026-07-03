@@ -105,6 +105,18 @@
       "tags": ["learning", "digest", "sessions", "recall", "quiz", "spaced-repetition", "knowledge"]
     },
     {
+      "name": "session-reconciler",
+      "source": "./plugins/session-reconciler",
+      "description": "Attributes an uncommitted working tree back to the parallel Claude Code sessions that produced it, from the JSONL transcripts. Mechanical-first (jq) attribution, collision matrix for last-writer-wins risk zones, and a suggested per-feature commit grouping. Never runs git.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["session", "reconcile", "attribution", "parallel", "git", "jq", "transcripts"]
+    },
+    {
       "name": "worktree-manager",
       "source": "./plugins/worktree-manager",
       "description": "Manage persistent git worktrees for parallel human+AI development across sessions. Create, list, and remove sibling-directory worktrees, auto-detect worktree context on session start, and merge worktree branches back with dependency-ordered, conflict-aware resolution.",
