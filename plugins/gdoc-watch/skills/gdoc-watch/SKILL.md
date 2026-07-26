@@ -75,7 +75,7 @@ terminal.
    judgment they asked for: what's weak, what's missing, what contradicts what. Point at
    specific text — quote the phrase you mean.
 5. **Do not edit the doc.** This skill is read-only by design. If the user wants changes
-   applied, hand off to the `sysdesign-gdocs` agent (edits existing docs via
+   applied, hand off to the `projman-gdoc-edit` agent (edits existing docs via
    `gws docs batchUpdate`) and say that's what you're doing.
 
 ## Failure handling

@@ -77,5 +77,5 @@ run the `gws-reauth` skill and retry.
 ## Scope
 
 Read-only, by design. The doc is exported as `text/plain`, so comments, suggestions, and
-formatting are not visible. To *edit* a doc, use the `sysdesign-gdocs` agent
+formatting are not visible. To *edit* a doc, use the `projman-gdoc-edit` agent
 (`gws docs batchUpdate`); to *create* one from markdown, use `md-to-gdoc`.
