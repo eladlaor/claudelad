@@ -1,0 +1,5 @@
+{
+  "name": "gdoc-watch",
+  "description": "Keep a Google Doc in view for the current Claude Code session: ask questions about it while you edit and get told what changed since you last asked. Pull-on-prompt via gws, no polling.",
+  "version": "1.0.0"
+}

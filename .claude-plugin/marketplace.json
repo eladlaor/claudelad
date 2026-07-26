@@ -45,6 +45,18 @@
       "tags": ["session", "search", "history", "index"]
     },
     {
+      "name": "gdoc-watch",
+      "source": "./plugins/gdoc-watch",
+      "description": "Keep a Google Doc in view for the current Claude Code session: ask questions about it while you edit and get told what changed since you last asked. Pull-on-prompt via gws — no polling, no background watcher. Session-scoped state, snapshot-based diffs.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["google-doc", "gdoc", "watch", "advisor", "diff", "session", "gws", "workspace"]
+    },
+    {
       "name": "md-to-gdoc",
       "source": "./plugins/md-to-gdoc",
       "description": "Convert markdown documents into properly formatted Google Docs using the Google Workspace CLI (gws). Supports custom format profiles extracted from reference Google Docs.",
