@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/handlers/pull-kb.sh",
+            "timeout": 5000
+          }
+        ]
+      }
+    ]
+  }
+}

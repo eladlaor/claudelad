@@ -12,6 +12,7 @@
   - [validate-in-chrome](#validate-in-chrome)
   - [what-i-learned-today](#what-i-learned-today)
   - [worktree-manager](#worktree-manager)
+  - [claude-code-kb-sync](#claude-code-kb-sync)
 
 A Claude Code plugin marketplace. Hooks, skills, and automations that extend what Claude Code can do out of the box.
 
@@ -92,4 +93,12 @@ A productive day with Claude Code teaches you real things — a CLI flag, a debu
 Claude Code's built-in worktrees are session-scoped and disappear when the session ends. If your workflow runs parallel branches — you on one feature, Claude on another, across multiple sessions — you need worktrees that persist, live as navigable sibling directories, and merge back cleanly. This plugin creates and manages persistent worktrees, auto-detects worktree context via a `SessionStart` hook (injecting branch, main-repo path, and sibling worktrees), and merges branches back with dependency-ordered, conflict-aware resolution and verification.
 
 [Documentation](plugins/worktree-manager/README.md) · `/plugin install worktree-manager@claudelad`
+
+### claude-code-kb-sync
+
+Claude Code ships a release roughly every day, so any notes you keep on how it works start rotting the moment you write them — and you find out only when Claude confidently describes behavior that changed months ago. Re-reading the official docs every time burns tokens on pages that never changed. This plugin keeps a local documentation knowledge base current on its own: a cloud routine fires on each new release, uses the changelog to work out which of your KB files the change actually touches, re-fetches only those pages, merges the delta into your prose without rewriting your documents, and pushes one revertable commit — with your laptop closed. A `SessionStart` hook fast-forwards the repo locally so every session starts current, and `status` catches the failure nothing else does: a routine still running a months-old prompt.
+
+**Example:** `/claude-code-kb-sync:kb-sync status` → `enabled · release trigger · last synced v2.1.220 (2d ago) · 3 versions behind · prompt drift: none`
+
+[Documentation](plugins/claude-code-kb-sync/README.md) · `/plugin install claude-code-kb-sync@claudelad`
 

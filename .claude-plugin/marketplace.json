@@ -139,6 +139,18 @@
       "license": "MIT",
       "category": "developer-tools",
       "tags": ["git", "worktree", "parallel", "branches", "merge", "hooks", "session"]
+    },
+    {
+      "name": "claude-code-kb-sync",
+      "source": "./plugins/claude-code-kb-sync",
+      "description": "Keep a local Claude Code documentation knowledge base current automatically. A cloud routine merges each release's doc changes into your KB repo and pushes; a SessionStart hook pulls it locally.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["claude-code", "documentation", "knowledge-base", "routine", "automation", "sync", "hooks"]
     }
   ]
 }

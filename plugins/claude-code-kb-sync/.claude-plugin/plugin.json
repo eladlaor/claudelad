@@ -1,0 +1,5 @@
+{
+  "name": "claude-code-kb-sync",
+  "description": "Keep a local Claude Code documentation knowledge base current automatically. A cloud routine merges each release's doc changes into your KB repo and pushes; a SessionStart hook pulls it locally.",
+  "version": "0.1.0"
+}
