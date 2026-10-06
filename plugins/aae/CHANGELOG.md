@@ -29,6 +29,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   than a silent overwrite. `uninstall` refuses to remove anything that is not its
   own symlink.
 
+- `knowledge/specs/BEHAVIOR_SPEC.md` — the v1.0 behaviour spec. Fixes scope at two
+  tiers (public docs plus CLI releases) for Claude Code only, states the watcher exit
+  codes, state layout and SessionStart hook output as stable contracts, and defines
+  twelve acceptance criteria of which five are already verified.
+
 ### Changed
 
 - `AAE_WATCH_DESIGN.md` now describes private knowledge sources as a single optional,
