@@ -12,7 +12,6 @@
   - [validate-in-chrome](#validate-in-chrome)
   - [what-i-learned-today](#what-i-learned-today)
   - [worktree-manager](#worktree-manager)
-  - [aae](#aae)
 
 A Claude Code plugin marketplace. Hooks, skills, and automations that extend what Claude Code can do out of the box.
 
@@ -93,10 +92,3 @@ A productive day with Claude Code teaches you real things — a CLI flag, a debu
 Claude Code's built-in worktrees are session-scoped and disappear when the session ends. If your workflow runs parallel branches — you on one feature, Claude on another, across multiple sessions — you need worktrees that persist, live as navigable sibling directories, and merge back cleanly. This plugin creates and manages persistent worktrees, auto-detects worktree context via a `SessionStart` hook (injecting branch, main-repo path, and sibling worktrees), and merges branches back with dependency-ordered, conflict-aware resolution and verification.
 
 [Documentation](plugins/worktree-manager/README.md) · `/plugin install worktree-manager@claudelad`
-
-### aae
-
-MongoDB Atlas Agent Engine is in Public Preview: its documentation changes weekly, its CLI shipped five releases in six days, and its own limitations page warns that formats may change without a backward-compatible migration path. The failure mode isn't missing an announcement — it's an agent answering confidently from a model of the product that was correct last week. This plugin bundles the `aae-guide` specialist agent, a watcher that detects real documentation changes by SHA-256 content hashing every page (the docs serve no `Last-Modified` or `ETag`, so conditional requests cannot work), and an `ae` shortcut for the `agentengine` CLI — installed as a PATH symlink rather than a shell alias, so it resolves in the non-interactive shells that coding agents actually use.
-
-[Documentation](plugins/aae/README.md) · `/plugin install aae@claudelad`
-

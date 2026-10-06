@@ -139,18 +139,6 @@
       "license": "MIT",
       "category": "developer-tools",
       "tags": ["git", "worktree", "parallel", "branches", "merge", "hooks", "session"]
-    },
-    {
-      "name": "aae",
-      "source": "./plugins/aae",
-      "description": "MongoDB Atlas Agent Engine toolkit: the aae-guide specialist agent, a watcher that detects when AAE documentation pages change by content hashing, and an 'ae' shortcut for the agentengine CLI. Built for a Public Preview product whose docs and CLI move weekly.",
-      "version": "0.1.0",
-      "author": {
-        "name": "Elad Laor"
-      },
-      "license": "MIT",
-      "category": "developer-tools",
-      "tags": ["mongodb", "atlas", "agent-engine", "agentengine", "docs-watch", "mcp"]
     }
   ]
 }
