@@ -12,6 +12,7 @@ This plugin keeps that from happening: a specialist agent for Atlas Agent Engine
 - **Staying current**: a nightly watcher tells you which documentation pages changed, with per-page diffs
 - **Typing less**: `ae deploy list` instead of `agentengine deploy list`
 - **Tearing an agent down cleanly**: `aae-delete-agent` removes the workspace, its sessions, its secrets and its local folder in the one order that works — there is no single CLI command for this, and `workspace delete` alone leaves most of it behind
+- **Adding an agent to an existing monorepo**: `aae-add-agent` scaffolds the agent in a scratch directory, moves only its folder under `agents/`, lists it in the root `agent.yaml`, and registers exactly one new workspace — `agentengine create` always makes a whole new project, and `init` at the root can orphan existing workspaces
 
 ## Install
 

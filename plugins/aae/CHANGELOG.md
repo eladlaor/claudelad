@@ -35,6 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   explicit confirmation, orders remote teardown before local so the workspace is
   never stranded, and refuses to delete a shared Atlas database user while other
   agents in the project still depend on it.
+- `aae-add-agent` skill — adds one agent to an existing Atlas Agent Engine monorepo,
+  since `agentengine create` only scaffolds whole new projects. Scaffolds in a scratch
+  directory (or copies a sibling with `--from`, excluding its workspace binding and
+  local secrets), transplants the agent folder, appends it to the root `agent.yaml`,
+  and optionally registers a single workspace from the agent's own directory,
+  verifying that no existing workspace changed.
 - `knowledge/specs/BEHAVIOR_SPEC.md` — the v1.0 behaviour spec. Fixes scope at two
   tiers (public docs plus CLI releases) for Claude Code only, states the watcher exit
   codes, state layout and SessionStart hook output as stable contracts, and defines
