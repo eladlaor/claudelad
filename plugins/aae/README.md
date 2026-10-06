@@ -11,6 +11,7 @@ This plugin keeps that from happening: a specialist agent for Atlas Agent Engine
 - **Asking anything about Atlas Agent Engine**: the `aae-guide` agent knows the runtime model, the agent contract, the config surface, and the failure modes — and verifies against live docs rather than recalling
 - **Staying current**: a nightly watcher tells you which documentation pages changed, with per-page diffs
 - **Typing less**: `ae deploy list` instead of `agentengine deploy list`
+- **Tearing an agent down cleanly**: `aae-delete-agent` removes the workspace, its sessions, its secrets and its local folder in the one order that works — there is no single CLI command for this, and `workspace delete` alone leaves most of it behind
 
 ## Install
 

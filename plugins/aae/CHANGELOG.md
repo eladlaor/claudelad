@@ -29,6 +29,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   than a silent overwrite. `uninstall` refuses to remove anything that is not its
   own symlink.
 
+- `aae-delete-agent` skill — complete teardown of a single Atlas Agent Engine agent:
+  workspace, sessions, workspace-scoped secrets, Atlas database user, monorepo
+  manifest entry and local folder. Opens with a read-only inventory and a single
+  explicit confirmation, orders remote teardown before local so the workspace is
+  never stranded, and refuses to delete a shared Atlas database user while other
+  agents in the project still depend on it.
 - `knowledge/specs/BEHAVIOR_SPEC.md` — the v1.0 behaviour spec. Fixes scope at two
   tiers (public docs plus CLI releases) for Claude Code only, states the watcher exit
   codes, state layout and SessionStart hook output as stable contracts, and defines
