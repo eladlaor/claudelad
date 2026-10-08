@@ -139,6 +139,18 @@
       "license": "MIT",
       "category": "developer-tools",
       "tags": ["git", "worktree", "parallel", "branches", "merge", "hooks", "session"]
+    },
+    {
+      "name": "session-handoff",
+      "source": "./plugins/session-handoff",
+      "description": "Rewrite a repo's session handoff document so the next session resumes from a fresh clone without asking anything. Audits the gitignored state — .env files, CLI pins, virtualenvs — that is invisible in a new directory and fails confusingly rather than obviously.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": ["handoff", "session", "continuity", "onboarding", "documentation", "gitignore", "context"]
     }
   ]
 }

@@ -1,0 +1,5 @@
+{
+  "name": "session-handoff",
+  "description": "Rewrite a repo's session handoff document so the next session resumes from a fresh clone without asking anything. Audits gitignored state, which is what actually breaks a new directory.",
+  "version": "1.0.0"
+}
