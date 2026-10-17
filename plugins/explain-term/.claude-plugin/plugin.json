@@ -1,0 +1,5 @@
+{
+  "name": "explain-term",
+  "description": "Explain any concept across five fixed dimensions (analogy, mechanism, use-case, the wrong mental model to preempt, and etymology), verified against live sources for volatile terms. Optionally persists it as a glossary file.",
+  "version": "1.0.0"
+}

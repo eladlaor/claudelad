@@ -18,7 +18,16 @@
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["transcription", "asr", "diarization", "whisper", "pyannote", "hebrew", "audio", "local"]
+      "tags": [
+        "transcription",
+        "asr",
+        "diarization",
+        "whisper",
+        "pyannote",
+        "hebrew",
+        "audio",
+        "local"
+      ]
     },
     {
       "name": "date-context",
@@ -30,7 +39,11 @@
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["date", "context", "session"]
+      "tags": [
+        "date",
+        "context",
+        "session"
+      ]
     },
     {
       "name": "session-finder",
@@ -42,7 +55,12 @@
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["session", "search", "history", "index"]
+      "tags": [
+        "session",
+        "search",
+        "history",
+        "index"
+      ]
     },
     {
       "name": "gdoc-watch",
@@ -54,7 +72,16 @@
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["google-doc", "gdoc", "watch", "advisor", "diff", "session", "gws", "workspace"]
+      "tags": [
+        "google-doc",
+        "gdoc",
+        "watch",
+        "advisor",
+        "diff",
+        "session",
+        "gws",
+        "workspace"
+      ]
     },
     {
       "name": "md-to-gdoc",
@@ -66,7 +93,15 @@
       },
       "license": "MIT",
       "category": "document-creation",
-      "tags": ["markdown", "google-doc", "gdoc", "conversion", "gws", "workspace", "format-profile"]
+      "tags": [
+        "markdown",
+        "google-doc",
+        "gdoc",
+        "conversion",
+        "gws",
+        "workspace",
+        "format-profile"
+      ]
     },
     {
       "name": "notebooklm-upload",
@@ -78,7 +113,13 @@
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["notebooklm", "upload", "batch", "google", "sources"]
+      "tags": [
+        "notebooklm",
+        "upload",
+        "batch",
+        "google",
+        "sources"
+      ]
     },
     {
       "name": "timewatch-fill",
@@ -90,7 +131,12 @@
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["timewatch", "attendance", "browser-automation", "claude-in-chrome"]
+      "tags": [
+        "timewatch",
+        "attendance",
+        "browser-automation",
+        "claude-in-chrome"
+      ]
     },
     {
       "name": "validate-in-chrome",
@@ -102,19 +148,35 @@
       },
       "license": "MIT",
       "category": "developer-tools",
-      "tags": ["validation", "e2e", "ui-testing", "browser-automation", "claude-in-chrome", "subagent"]
+      "tags": [
+        "validation",
+        "e2e",
+        "ui-testing",
+        "browser-automation",
+        "claude-in-chrome",
+        "subagent"
+      ]
     },
     {
       "name": "what-i-learned-today",
       "source": "./plugins/what-i-learned-today",
-      "description": "Summarize what you learned across your Claude Code sessions in a given day (or window) as a 10-bullet lessons-learned digest, save it to disk, and run an interactive open-recall quiz. Excludes its own prior output to avoid recycling.",
-      "version": "1.0.0",
+      "description": "Summarize what you learned across your Claude Code sessions in a given day (or window) as a 10-bullet lessons-learned digest, save it to disk, and run an interactive open-recall quiz. Excludes its own prior output to avoid recycling. Includes morning-recall: a short, confidence-building quiz on the previous days with a spaced-repetition ledger.",
+      "version": "1.1.0",
       "author": {
         "name": "Elad Laor"
       },
       "license": "MIT",
       "category": "productivity",
-      "tags": ["learning", "digest", "sessions", "recall", "quiz", "spaced-repetition", "knowledge"]
+      "tags": [
+        "learning",
+        "digest",
+        "sessions",
+        "recall",
+        "quiz",
+        "spaced-repetition",
+        "knowledge",
+        "morning"
+      ]
     },
     {
       "name": "session-reconciler",
@@ -126,7 +188,15 @@
       },
       "license": "MIT",
       "category": "developer-tools",
-      "tags": ["session", "reconcile", "attribution", "parallel", "git", "jq", "transcripts"]
+      "tags": [
+        "session",
+        "reconcile",
+        "attribution",
+        "parallel",
+        "git",
+        "jq",
+        "transcripts"
+      ]
     },
     {
       "name": "worktree-manager",
@@ -138,7 +208,15 @@
       },
       "license": "MIT",
       "category": "developer-tools",
-      "tags": ["git", "worktree", "parallel", "branches", "merge", "hooks", "session"]
+      "tags": [
+        "git",
+        "worktree",
+        "parallel",
+        "branches",
+        "merge",
+        "hooks",
+        "session"
+      ]
     },
     {
       "name": "session-handoff",
@@ -150,7 +228,91 @@
       },
       "license": "MIT",
       "category": "developer-tools",
-      "tags": ["handoff", "session", "continuity", "onboarding", "documentation", "gitignore", "context"]
+      "tags": [
+        "handoff",
+        "session",
+        "continuity",
+        "onboarding",
+        "documentation",
+        "gitignore",
+        "context"
+      ]
+    },
+    {
+      "name": "clip",
+      "source": "./plugins/clip",
+      "description": "Put a value straight onto your clipboard with a shell command instead of copying it out of the chat. Secrets from .env files or 1Password are copied without ever being printed; the clipboard is verified by shape, never by content.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "clipboard",
+        "pbcopy",
+        "wl-copy",
+        "xclip",
+        "secrets",
+        "1password",
+        "env"
+      ]
+    },
+    {
+      "name": "session-archive",
+      "source": "./plugins/session-archive",
+      "description": "Hide Claude Code sessions from the /resume picker without deleting them, and restore them later. Matches sessions by name or id, refuses to move a live session, and keeps archived transcripts safe from automatic retention cleanup.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "session",
+        "resume",
+        "archive",
+        "cleanup",
+        "transcripts"
+      ]
+    },
+    {
+      "name": "permissions-master",
+      "source": "./plugins/permissions-master",
+      "description": "Configure, audit, and troubleshoot Claude Code permissions: rule syntax, tool-specific patterns, permission modes, settings precedence, and the common mistakes that make a rule silently not match.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "developer-tools",
+      "tags": [
+        "permissions",
+        "security",
+        "settings",
+        "allow",
+        "deny",
+        "claude-code"
+      ]
+    },
+    {
+      "name": "explain-term",
+      "source": "./plugins/explain-term",
+      "description": "Explain any concept across five fixed dimensions: analogy, mechanism, use-case, the wrong mental model to preempt, and etymology with pronunciation. Volatile terms are verified against live sources; optionally persisted as a glossary file.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Elad Laor"
+      },
+      "license": "MIT",
+      "category": "learning",
+      "tags": [
+        "learning",
+        "glossary",
+        "explain",
+        "teaching",
+        "concepts",
+        "knowledge"
+      ]
     }
   ]
 }

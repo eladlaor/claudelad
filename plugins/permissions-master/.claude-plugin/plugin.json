@@ -1,0 +1,5 @@
+{
+  "name": "permissions-master",
+  "description": "Configure, audit, and troubleshoot Claude Code permissions: rule syntax, tool-specific patterns, permission modes, settings precedence, and the common mistakes that make a rule silently not match.",
+  "version": "1.0.0"
+}

@@ -12,6 +12,14 @@
   - [validate-in-chrome](#validate-in-chrome)
   - [what-i-learned-today](#what-i-learned-today)
   - [worktree-manager](#worktree-manager)
+  - [audio-transcribe](#audio-transcribe)
+  - [gdoc-watch](#gdoc-watch)
+  - [session-handoff](#session-handoff)
+  - [session-reconciler](#session-reconciler)
+  - [clip](#clip)
+  - [session-archive](#session-archive)
+  - [permissions-master](#permissions-master)
+  - [explain-term](#explain-term)
 
 A Claude Code plugin marketplace. Hooks, skills, and automations that extend what Claude Code can do out of the box.
 
@@ -83,7 +91,7 @@ After Claude implements a UI change, you usually have to manually click around t
 
 ### what-i-learned-today
 
-A productive day with Claude Code teaches you real things — a CLI flag, a debugging conclusion, an architectural call — that then vanish into long transcripts. This plugin mines the day's session files, filters out tool noise and routine status updates, and distills only the durable insights into a 10-bullet "what I learned" digest tagged by project. It saves the digest to disk and runs an interactive open-recall quiz over those lessons, one question at a time. It excludes its own prior digests and quizzes from the corpus, so reviewing yesterday's lessons never recycles into today's.
+A productive day with Claude Code teaches you real things — a CLI flag, a debugging conclusion, an architectural call — that then vanish into long transcripts. This plugin mines the day's session files, filters out tool noise and routine status updates, and distills only the durable insights into a 10-bullet "what I learned" digest tagged by project. It saves the digest to disk and runs an interactive open-recall quiz over those lessons, one question at a time. It excludes its own prior digests and quizzes from the corpus, so reviewing yesterday's lessons never recycles into today's. It also ships **morning-recall**: a short quiz on the previous days, calibrated so you mostly get it right, with a spaced-repetition ledger that brings misses back.
 
 [Documentation](plugins/what-i-learned-today/README.md) · `/plugin install what-i-learned-today@claudelad`
 
@@ -92,3 +100,51 @@ A productive day with Claude Code teaches you real things — a CLI flag, a debu
 Claude Code's built-in worktrees are session-scoped and disappear when the session ends. If your workflow runs parallel branches — you on one feature, Claude on another, across multiple sessions — you need worktrees that persist, live as navigable sibling directories, and merge back cleanly. This plugin creates and manages persistent worktrees, auto-detects worktree context via a `SessionStart` hook (injecting branch, main-repo path, and sibling worktrees), and merges branches back with dependency-ordered, conflict-aware resolution and verification.
 
 [Documentation](plugins/worktree-manager/README.md) · `/plugin install worktree-manager@claudelad`
+
+### audio-transcribe
+
+Turn a recording of a conversation or talk into a speaker-labeled transcript, fully locally. faster-whisper handles the speech recognition (Hebrew and 90+ languages) and pyannote labels who spoke when. No audio leaves your machine.
+
+[Documentation](plugins/audio-transcribe/README.md) · `/plugin install audio-transcribe@claudelad`
+
+### gdoc-watch
+
+Keep a Google Doc in view while you edit it: ask Claude questions about it and get told what changed since you last asked. It pulls the doc on each prompt via `gws`, with no background polling.
+
+[Documentation](plugins/gdoc-watch/README.md) · `/plugin install gdoc-watch@claudelad`
+
+### session-handoff
+
+Most handoff documents are written for someone who was already in the room. This skill rewrites a repo's handoff so the next session can resume from a fresh clone, and makes the gitignored state (`.env` files, CLI pins, virtualenvs), which is what actually breaks a new directory, a required section.
+
+[Documentation](plugins/session-handoff/README.md) · `/plugin install session-handoff@claudelad`
+
+### session-reconciler
+
+Several parallel Claude Code sessions wrote to one working tree and now nobody knows which change came from where. This plugin reads the session transcripts and attributes each uncommitted change to the session that made it, flags files more than one session wrote, and suggests a per-feature commit grouping. It never runs git.
+
+[Documentation](plugins/session-reconciler/README.md) · `/plugin install session-reconciler@claudelad`
+
+### clip
+
+Copying out of a terminal chat drags along fences, borders, and trailing newlines, and asking Claude to print a secret puts it in the transcript. `/clip` pipes the exact value onto your clipboard (`pbcopy`, `wl-copy`, `xclip`, or OSC 52 over SSH), reads secrets from `.env` or 1Password inside the pipe so they are never printed, and verifies the copy by shape, never by content.
+
+[Documentation](plugins/clip/README.md) · `/plugin install clip@claudelad`
+
+### session-archive
+
+The `/resume` picker lists every transcript and has no way to hide one. This plugin moves sessions out to `~/.claude/archived-sessions/` (by name or id) and restores them on request. Nothing is deleted, archived transcripts survive automatic retention cleanup, and it refuses to move a session that is still live.
+
+[Documentation](plugins/session-archive/README.md) · `/plugin install session-archive@claudelad`
+
+### permissions-master
+
+Permission rules fail quietly: a wrong path anchor or a `Bash` pattern that doesn't match how the command is really invoked just doesn't apply. This skill audits your allow/deny/ask rules across settings files, configures new ones from a stated goal, and troubleshoots why a rule isn't taking effect.
+
+[Documentation](plugins/permissions-master/README.md) · `/plugin install permissions-master@claudelad`
+
+### explain-term
+
+Explain any concept across five fixed dimensions, each heading phrased as a real question: an analogy and where it breaks, the mechanism in plain language, when to use it, the wrong mental model to preempt, and where the name comes from. Volatile terms are checked against live sources first, and `--persist` saves the entry as a glossary file.
+
+[Documentation](plugins/explain-term/README.md) · `/plugin install explain-term@claudelad`

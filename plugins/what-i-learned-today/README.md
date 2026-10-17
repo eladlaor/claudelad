@@ -66,3 +66,23 @@ Re-running for the same date overwrites that day's file (the later run has more 
 ```
 /plugin uninstall what-i-learned-today@claudelad
 ```
+
+## morning-recall
+
+A companion skill for the start of the day: a short recall quiz on what you learned in the
+previous day or two, **calibrated so you mostly answer correctly**. The aim is to start the
+day feeling sharp; retrieval difficulty comes second.
+
+- Prefers an existing digest from `~/what-i-learned-today/`, and falls back to mining the
+  previous days' sessions.
+- Grades open answers. A correct mechanism with the wrong label still counts as correct,
+  with a terminology note.
+- Adapts as it goes: one miss drops the difficulty for the next question.
+- Keeps a spaced-repetition ledger at `~/what-i-learned-today/recall/ledger.json` so items
+  you missed come back on later mornings.
+
+```
+/what-i-learned-today:morning-recall [1d|2d|3d|YYYY-MM-DD] [n=6] [subject=<topic>]
+```
+
+Or just say "good morning", "morning quiz", or "quiz me on yesterday".

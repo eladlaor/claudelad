@@ -1,0 +1,5 @@
+{
+  "name": "clip",
+  "description": "Put a value straight onto your clipboard with a shell command instead of copying it out of the chat. Secrets from .env files or 1Password are copied without ever being printed.",
+  "version": "1.0.0"
+}

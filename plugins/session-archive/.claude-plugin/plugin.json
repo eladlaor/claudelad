@@ -1,0 +1,5 @@
+{
+  "name": "session-archive",
+  "description": "Hide Claude Code sessions from the /resume picker without deleting them, and restore them later. Refuses to move a live session. Archived transcripts also survive automatic retention cleanup.",
+  "version": "1.0.0"
+}
